@@ -1,7 +1,7 @@
-"use client";
+'use client';
 
-import { motion, useMotionValue, useTransform, animate } from "framer-motion";
-import { useEffect } from "react";
+import { motion, useMotionValue, useTransform, animate } from 'framer-motion';
+import { useEffect } from 'react';
 
 export interface IRedoTextAnimationProps {
   delay: number;
@@ -11,19 +11,19 @@ export default function RedoTextAnimation({ delay }: IRedoTextAnimationProps) {
   const textIndex = useMotionValue(0);
 
   const texts = [
-    "I’m a coding ninja, ready to tackle any challenge!",
-    "Pixels and code are my playground, let’s create magic!",
-    "Simplicity is the ultimate sophistication in design.",
-    "Debugging is like a treasure hunt, but with bugs!",
-    "Responsive design is my superpower, no matter the screen size.",
-    "Algorithms are the poetry of programming.",
-    "Teamwork makes the dream work, let’s build something amazing together!",
-    "Refactoring code is like decluttering your digital space.",
-    "Continuous learning keeps me sharp and ready for the future.",
-    "Elegant code is the hallmark of a skilled developer.",
+    'I build dynamic, performant web apps using React and Next.js—bridging design and functionality with precision.',
+    'From components to routes, I craft scalable, maintainable UIs that users love and developers trust.',
+    'In a fast-moving React ecosystem, I stay ahead by writing clean code and embracing best practices.',
+    'Next.js empowers me to deliver fast, SEO-optimized, and server-ready applications—seamlessly.',
+    'I design with responsiveness in mind—every pixel, every breakpoint, every interaction.',
+    'Code splitting, lazy loading, and SSR aren’t buzzwords—they’re tools I use daily to boost performance.',
+    'I treat debugging as an opportunity to learn, improve, and perfect user experiences.',
+    'Whether it’s state management, routing, or animations—I write code that’s both elegant and efficient.',
+    'Working in React means staying curious—I constantly explore new libraries, hooks, and patterns.',
+    'I believe great frontend work is equal parts code, collaboration, and care for the end user.',
   ];
 
-  const baseText = useTransform(textIndex, (latest) => texts[latest] || "");
+  const baseText = useTransform(textIndex, (latest) => texts[latest] || '');
   const count = useMotionValue(0);
   const rounded = useTransform(count, (latest) => Math.round(latest));
   const displayText = useTransform(rounded, (latest) =>
@@ -33,12 +33,12 @@ export default function RedoTextAnimation({ delay }: IRedoTextAnimationProps) {
 
   useEffect(() => {
     animate(count, 60, {
-      type: "tween",
+      type: 'tween',
       delay: delay,
       duration: 3,
-      ease: "easeIn",
+      ease: 'easeIn',
       repeat: Infinity,
-      repeatType: "reverse",
+      repeatType: 'reverse',
       repeatDelay: 1,
       onUpdate(latest) {
         if (updatedThisRound.get() === true && latest > 0) {

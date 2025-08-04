@@ -1,7 +1,7 @@
 'use client';
 
 import { useSectionInView } from '@/common/lib/hooks';
-import portfolioImg from '@/../public/images/photo.jpg';
+import portfolioImg from '@/../public/image/IMG_2552.jpg';
 import { smoothScrollTo } from '@/common/lib/utils';
 import SectionDivider from '@/common/components/shared/section-divider';
 import SectionHeading from '@/common/components/shared/section-heading';
@@ -47,9 +47,9 @@ export default function About() {
               <div className="flex h-full flex-col justify-center gap-6">
                 <span>
                   I&apos;m Front-end developer with expertise in TypeScript,
-                  React & Next.js. Proven ability to deliver user-centered web
-                  applications with a focus on intuitive experiences and user
-                  interaction.
+                  JavaScript, React & Next.js. Proven ability to deliver
+                  user-centered web applications with a focus on intuitive
+                  experiences and user interaction.
                 </span>
                 <span>
                   Seeking for Web Development opportunities where I can leverage
@@ -79,7 +79,7 @@ export default function About() {
                   <Image
                     src={portfolioImg}
                     alt="portfolio image"
-                    placeholder="blur"
+                    // placeholder="blur"
                     width={470}
                     height={470}
                     className="z-10 rounded-full lg:h-[380px] lg:w-[380px] xl:h-[470px] xl:w-[470px]"

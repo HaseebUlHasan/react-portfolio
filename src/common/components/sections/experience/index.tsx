@@ -17,6 +17,9 @@ export default function Experience() {
   const { theme } = useTheme();
   const ihasMounted = useHasMounted();
 
+  const Timeline = VerticalTimeline as unknown as React.FC<any>;
+  const TimelineElement = VerticalTimelineElement as unknown as React.FC<any>;
+
   return (
     <section
       id="experience"
@@ -24,11 +27,11 @@ export default function Experience() {
       className="w-full scroll-mt-20 dark:bg-darkBg dark:text-white"
     >
       <SectionHeading>My experience</SectionHeading>
-      <VerticalTimeline animate={false}>
+      <Timeline animate={false}>
         {ihasMounted &&
           experiencesData.map((item, index) => (
             <React.Fragment key={index}>
-              <VerticalTimelineElement
+              <TimelineElement
                 contentStyle={{
                   background:
                     theme === 'light' ? '#f3f4f6' : 'rgba(255, 255, 255, 0.05)',
@@ -58,10 +61,10 @@ export default function Experience() {
                 <p className="!mt-1 !font-normal text-gray-700 dark:text-white/75">
                   {item.description}
                 </p>
-              </VerticalTimelineElement>
+              </TimelineElement>
             </React.Fragment>
           ))}
-      </VerticalTimeline>
+      </Timeline>
       <div className="flex w-full justify-center dark:bg-darkBg">
         <SectionDivider />
       </div>
