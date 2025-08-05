@@ -1,16 +1,7 @@
 import React from 'react';
 
-import campwithusImg from '@/../public/images/camp-with-us.png';
-import carcatalogImg from '@/../public/images/car-catalog.png';
-import filedriveImg from '@/../public/images/file-drive.png';
-import projectmanagementImg from '@/../public/images/project-management.png';
-import reactfoodImg from '@/../public/images/react-food.png';
-import surgeImg from '@/../public/images/surge.png';
 import portfolioImg from '@/../public/image/portfolio.png';
-import auditMasterImg from '@/../public/images/audit-master.png';
-import accountingImg from '@/../public/images/accounting.jpg';
-import { BookIcon, BriefcaseBusinessIcon } from 'lucide-react';
-
+import {  BriefcaseBusinessIcon } from 'lucide-react';
 import skyloovImg from "@/../public/image/skyloov-logo.png";
 import FineHomeImg from "@/../public/image/Fine-Homee.png";
 import AqaryInvestmentImg from "@/../public/image/AID.png"
@@ -69,13 +60,6 @@ export const experiencesData = [
   },
 ] as const;
 
-export const images = {
-  campwithusImg,
-  carcatalogImg,
-  filedriveImg,
-  projectmanagementImg,
-  reactfoodImg,
-};
 
 export const projectsData = [
   {
