@@ -4,7 +4,8 @@ import portfolioImg from '@/../public/image/portfolio.png';
 import {  BriefcaseBusinessIcon } from 'lucide-react';
 import skyloovImg from "@/../public/image/skyloov-logo.png";
 import FineHomeImg from "@/../public/image/Fine-Homee.png";
-import AqaryInvestmentImg from "@/../public/image/AID.png"
+import AqaryInvestmentImg from "@/../public/image/AID.png";
+import GreatFineImg from "@/../public/image/great-fine.jpg"
 
 export const links = [
   {
@@ -86,6 +87,14 @@ export const projectsData = [
     link: 'https://aqaryaid.com/en',
   },
   {
+    title: 'Great Fine Home',
+    description:
+      'Great Fine Home Real Estate is a Dubai-based real estate company offering buying, selling, and leasing services for residential and commercial properties, with a focus on professional client support.',
+      tags: ['TypeScript', 'React', 'Next.js', 'GraphQL'],
+    imageUrl: GreatFineImg,
+    link: 'https://aqaryaid.com/en',
+  },
+  {
     title: 'Portfolio',
     description: `Portfolio that you're currently viewing! This project showcases my work and provides information about me.`,
     tags: [
@@ -105,21 +114,19 @@ export const projectsData = [
 ] as const;
 
 export const skillsData = [
+  ['HTML', '/svgs/file-type-html.svg'],
+  ['CSS', '/svgs/file-type-css.svg'],
   ['JavaScript', '/svgs/javascript-js.svg'],
   ['TypeScript', '/svgs/typescript-icon.svg'],
   ['React', '/svgs/react.svg'],
   ['Next.js', '/svgs/nextjs.svg'],
-  ['Framer', '/svgs/framer.svg'],
   ['Tailwind', '/svgs/tailwind-css.svg'],
+  ['Sass', '/svgs/Sass.svg'],
   ['Axios', '/svgs/axios.svg'],
   ['Redux', '/svgs/redux-original.svg'],
-  ['HTML', '/svgs/file-type-html.svg'],
-  ['CSS', '/svgs/file-type-css.svg'],
-  ['Sass', '/svgs/Sass.svg'],
-  ['Git', '/svgs/git.svg'],
-  ['GitHub', '/svgs/github.svg'],
+  ['Zustand', '/svgs/zustand.svg'],
   ['Shadcn', '/svgs/shadcnui.svg'],
   ["Material UI", "/svgs/mui.svg"],
+  ['GitHub', '/svgs/github.svg'],
  
-  ['', '/svgs/etc.svg'],
 ] as const;

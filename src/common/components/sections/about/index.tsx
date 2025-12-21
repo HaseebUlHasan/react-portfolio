@@ -1,7 +1,7 @@
 'use client';
 
 import { useSectionInView } from '@/common/lib/hooks';
-import portfolioImg from '@/../public/image/IMG_2552.jpg';
+import portfolioImg from '@/../public/image/haseeb.png';
 import { smoothScrollTo } from '@/common/lib/utils';
 import SectionDivider from '@/common/components/shared/section-divider';
 import SectionHeading from '@/common/components/shared/section-heading';
@@ -79,7 +79,7 @@ export default function About() {
                   <Image
                     src={portfolioImg}
                     alt="portfolio image"
-                    // placeholder="blur"
+                    placeholder="blur"
                     width={470}
                     height={470}
                     className="z-10 rounded-full lg:h-[380px] lg:w-[380px] xl:h-[470px] xl:w-[470px]"
